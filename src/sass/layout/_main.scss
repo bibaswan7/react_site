@@ -1,0 +1,16 @@
+.main-container{
+    @include sm{
+        max-width: 463px;
+        margin: 0 15px;
+    }
+
+    @include md{
+        max-width: 750px;
+        padding: 0 15px;
+    }
+    
+    @include lg{
+        max-width: 1170px;
+        padding: 0 15px;
+    }
+}
