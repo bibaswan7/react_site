@@ -1,4 +1,5 @@
 import React from "react";
+import Button from './Button';
 
 export default function Footer() {
 
@@ -20,14 +21,14 @@ export default function Footer() {
                 </div>
 
                 <div className="section-latest-blog">
-                    <h1>Latest Blog</h1>
+                    <h2>Latest Blog</h2>
 
-                    <h3>FEBRUARY 15, 2018</h3>
-                    <h2>Art Gallery in Japan</h2>
-                    <h3>FEBRUARY 9, 2018</h3>
-                    <h2>A Japanese Constellation</h2>
-                    <h3>FEBRUARY 15, 2018</h3>
-                    <h2>Road Trip</h2>
+                    <h4>FEBRUARY 15, 2018</h4>
+                    <h3>Art Gallery in Japan</h3>
+                    <h4>FEBRUARY 9, 2018</h4>
+                    <h3>A Japanese Constellation</h3>
+                    <h4>FEBRUARY 15, 2018</h4>
+                    <h3>Road Trip</h3>
                 </div>
 
                 <div className="section-newsletter">
@@ -44,10 +45,12 @@ export default function Footer() {
                             id=""
                             placeholder="Enter Email address"
                         />
-                        <button>SUBSCRIBE</button>
+                        <Button 
+                            className="btn-subscribe"
+                        >SUBSCRIBE</Button>
                     </form>
                 </div>
-            
+            </div>
 
             <div className="section-copyright">
                 <p>
@@ -55,7 +58,7 @@ export default function Footer() {
                     by <span>Colorlib</span>
                 </p>
             </div>
-            </div>
+
         </div>
     )
 }

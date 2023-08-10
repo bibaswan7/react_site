@@ -12,6 +12,8 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 
+// CSS
+import './sass/main.scss';
 
 
 export default function App() {
@@ -19,16 +21,16 @@ export default function App() {
 
   return (
     <BrowserRouter>
-    <Routes>
-    <Route path="/" element={<Layout />}>
-      <Route index element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/work" element={<Work />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/services" element={<Services />} />
-    </Route>
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/services" element={<Services />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   )
 }

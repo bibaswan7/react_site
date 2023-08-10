@@ -1,16 +1,23 @@
 .main-container{
+    
+margin: 0 auto;
     @include sm{
         max-width: 463px;
-        margin: 0 15px;
+        // margin: 0 auto;
     }
 
     @include md{
         max-width: 750px;
-        padding: 0 15px;
+        // padding: 0 15px;
+        // margin: 0 auto;
     }
     
     @include lg{
         max-width: 1170px;
-        padding: 0 15px;
+        // padding: 0 15px;
+        // margin: 0 auto;
+        min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     }
 }
