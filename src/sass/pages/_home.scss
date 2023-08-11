@@ -1,3 +1,181 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+.about-container{
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  .section-title {
+    
+      h1 {
+        font-family: "Playfair Display";
+        color: $color-title;
+        font-size: $text-xxl;
+        text-align: center;
+        margin: 0 0 30px 0;
+        @include lg{
+          font-size: $text-xxxl;
+        }
+      }
+  }
+    
+    .intro-section {
+      padding-bottom: 80px;
+      margin-top: 48px;
+      width: 100%;
+      
+      
+      margin-bottom: 100px;
+      .intro-title {
+        width: 100%;
+        h1 {
+          font-family: "Playfair Display";
+          font-size: 50px;
+          font-weight: 300;
+          margin: 0;
+        }
+      }
+    
+      .intro-about {
+        margin-top: 30px;
+        width: 100%;
+        font-family: "Karla";
+        display: flex;
+        gap: 50px;
+        // justify-content:space-between;
+        align-items:flex-start;
+    
+        .text-trans {
+          margin-right: auto;
+          padding-top: 27px;
+          display:inline-block;
+          text-transform: uppercase;
+          // transform: rotate(90deg);
+          color: $color-primary;
+          font-weight: 400;
+          font-size: $text-btn;
+          writing-mode: vertical-lr;
+          letter-spacing: 16px;
+          position: relative;
+    
+          &:after {
+            content: "";
+            display:block;
+            background-color: black;
+            height: 1px;
+            width: 60px;
+            transform: rotate(90deg);
+            position: absolute;
+            bottom: -40px;
+            left: -23px;
+            
+
+            
+          }
+        }
+    
+        .intro-info {
+          p {
+            // width: 100%;
+            max-width: 400px;
+            margin-bottom: 24px;
+            line-height: 1.8;
+            font-size: 16px;
+            color: gray;
+            @include md{
+              max-width: 624px;
+            }
+          }
+          .social-media-icons {
+            margin-bottom: 24px;
+            .icon {
+              color: $color-link;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    
+    @include lg{
+      .section-title{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          // margin-top: 150px;
+          h1{
+              font-size: 250px;
+              position: absolute;
+          }
+      }
+  .intro-img-info-container{
+      margin-top: 160px;
+      display: flex;
+      width: 100%;
+      gap: 100px;
+      // flex-direction: row;
+      .image-section{
+          min-width: 458px;
+          // margin-right: 120px;
+          // height: 656px;
+          img{
+              width: 458px;
+              height: 556px;
+              object-fit: cover;
+          }
+      }
+      .intro-section{
+          display: flex;
+          flex-direction: column;
+          width: 555px;
+          .intro-title{
+              display: flex;
+              justify-content: flex-end;
+              flex-direction: column;
+              width: 100%;
+              // margin-left: 70px;
+              h1{
+                  font-size: 50px;
+                  font-family: 'Playfair Display';
+              }
+          }
+          .intro-about{
+            width: 100%;
+            padding-left: 20px;
+              flex-direction: row;
+              // justify-content: flex-start;
+              gap: 64px;
+              
+              .text-trans{
+                margin: 0;
+              padding: 10px 0 0 0;
+              }
+              .intro-info{
+                width: 100%;
+                
+                  p{
+                      
+                     
+                      max-width: 459px;
+                      margin: 0;
+              padding: 0;
+                  }
+                  .social-media-icons{
+                    margin-top: 30px;
+                    margin-bottom: 35px;
+                  }
+              }
+          }
+      }
+  }
+      .intro-paragraph{
+          display: flex;
+          p{
+  
+              width: 389px;
+              padding: 0 15px;
+          }
+      }
+    }
+}

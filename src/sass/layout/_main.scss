@@ -1,23 +1,130 @@
-.main-container{
-    
-margin: 0 auto;
-    @include sm{
-        max-width: 463px;
-        // margin: 0 auto;
-    }
+.main-container {
+  box-sizing: border-box;
+  background-color: #fafafa;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  @include sm {
+    max-width: 463px;
+  }
 
-    @include md{
-        max-width: 750px;
-        // padding: 0 15px;
-        // margin: 0 auto;
+  @include md {
+    max-width: 768px;
+  }
+
+  @include lg {
+    max-width: 1170px;
+  }
+}
+
+
+
+.menu-expand{
+  // display: none;
+  
+  top:0;
+  // bottom: 0;
+  overflow-y: scroll;
+  padding: 0 15px;
+  position: absolute;
+
+  // left: 518px;
+  right: 0;
+  background-color: #fafafa;
+  height: 100vh;
+  z-index: 8000;
+  width: 300px;
+  // border: 1px solid red;
+
+  .close-btn-container{
+    .close-btn{
+      background-color: #f2f2f2;
+      font-size: 35px;
+      position: relative;
+      padding: 7px;
+      left: 200px;
+      top: 10px;
+      cursor: pointer;
     }
-    
-    @include lg{
-        max-width: 1170px;
-        // padding: 0 15px;
-        // margin: 0 auto;
-        min-height: 100vh;
+    &:hover{
+      .close-btn{
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+
+  form{
     display: flex;
-    flex-direction: column;
+    padding: 0 15px;
+    margin: 0 15px;
+    margin-top: 30px;
+    width: 203px;
+    input[type="text"]{
+      height: 50px;
+      border: 2px solid #f2f2f2;
+      font-size: 14px;
+      font-family: 'Karla';
+      padding: 10px 42px 10px 20px;
+
+      &:focus{
+        outline: none;
+      }
     }
+    .search-icon{
+      background-color: purple;
+      margin: 0 4px 4px 0;
+      padding: 16px;
+      color: white;
+      position: relative;
+      right: 48px;
+      cursor: pointer;
+    }
+  }
+  .menu-works{
+    
+      h2{
+        font-family: "Playfair Display";
+          font-size: 30px;
+          // width: 401px;
+          font-weight: 400;
+          text-align: center;
+          line-height: 1.5;
+          margin-bottom: 30px;
+    }
+    .menu-img-gallery{
+
+      display: grid;
+      max-width: max-content;
+      margin: 0 auto 100px auto;
+      grid-template: 150px 150px / 101px 101px;
+      
+      img{
+        width: 101px;
+        height: 150px;
+        object-fit: cover;
+        
+      }
+    }
+  }
+
+  .menu-items{
+    ul{
+      margin-left: -8px;
+      margin-top: 60px;
+      margin-bottom: 40px;
+      list-style: none;
+      li a{
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 0;
+        margin: 10px 0;
+        font-family: 'Karla';
+        
+      }
+    }
+  }
 }

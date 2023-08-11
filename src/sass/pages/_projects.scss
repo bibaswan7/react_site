@@ -1,0 +1,158 @@
+.projects-page {
+  margin-bottom: 280px;
+  .section-works {
+    .work-item {
+      margin-bottom: 80px;
+
+      @for $i from 1 through 7 {
+        .work-banner-#{$i} {
+          @include work-banner-bg("../../assets/images/work-#{$i}.jpg");
+          transition: all 0.2s ease-in-out;
+          position: relative;
+
+          .banner-container {
+            // background-color: white;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.2s ease-in-out;
+          }
+          .banner-title {
+            z-index: 101;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 282px;
+            height: 161px;
+            background: white;
+            transition: all 0.2s ease-in;
+
+            h2 {
+              margin: 0;
+              font-size: 34px;
+              color: rgba(0, 0, 0, 0.8);
+            }
+          }
+
+          &:hover {
+            .banner-container {
+              z-index: 10;
+              opacity: 100;
+              background: rgba(0, 0, 0, 0.3);
+            }
+
+            .banner-title {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+
+      p {
+        max-width: 403px;
+        margin: auto;
+        // margin-bottom: 24px;
+        line-height: 1.8;
+        font-size: 16px;
+        color: gray;
+        font-family: "Karla";
+        margin-top: 40px;
+        margin-bottom: 24px;
+      }
+
+      .view-detail {
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: "Karla";
+          font-size: 13px;
+          letter-spacing: 4px;
+          color: $text-primary;
+          margin-bottom: 24px;
+          position: relative;
+
+          &::before {
+            content: "";
+            background-color: black;
+            width: 40px;
+            height: 1px;
+            position: absolute;
+            left: -60px;
+            top: 7px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:995px) {
+  .projects-page{
+    .section-works
+    {
+      margin-top: -120px;
+      h1{
+        font-size: 250px;
+        &::after{
+          top: 170px;
+        }
+      }
+      h2{
+        margin-top: -120px;
+      }
+      .work-item{
+      @for $i from 1 through 7 {
+        .work-banner-#{$i} {
+          height: 700px;
+          width: 100%;
+        }
+      }
+      p{
+        width: 350px;
+      }
+      .view-detail{
+        width: max-content;
+        margin-left: 650px;
+        
+        
+      }
+    }}
+  }
+}
+
+@media (min-width:768px) and (max-width:995px){
+  .projects-page{
+    .section-works{
+      .work-item{
+        p{
+          // margin: 0;
+          display: block;
+          min-width: 690px;
+        }
+      }
+    }
+  }
+.services-section{
+
+  .services-info{
+    h2{
+      width: 435px;
+    }
+  }
+}
+.skills-section{
+  .circular-container{
+    display: grid;
+    grid-template:1fr 1fr / 1fr 1fr;
+    place-items: center;
+  }
+}
+}

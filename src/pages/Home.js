@@ -1,7 +1,8 @@
 import React from "react";
+import About from "../Layout/About";
 
 export default function Home(){
     return(
-        <h1>This is Home</h1>
+        <About />
     )
 }

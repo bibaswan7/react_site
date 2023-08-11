@@ -1,0 +1,101 @@
+.skills-section {
+    padding: 0 15px 80px 15px;
+  
+    .circular-container{
+       h3{
+        font-family: "Playfair Display";
+        font-size: 22px;
+        font-weight: 200;
+        margin-bottom: 30px;
+
+       }
+        
+    
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        .circular{
+        height: 180px;
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        // background-image: conic-gradient(rgb(0, 183, 255) 45deg, gray 45deg);
+        position: relative;
+
+        &::after{
+          /* border: 1px solid black; */
+          content: "";
+          left: 50%;
+          top: 50%;
+          /* transform: translateY(-50%); */
+          transform: translate(-50%, -50%);
+          position: absolute;
+          height: 178px;
+          width: 178px;
+          border-radius: 50%;
+          /* z-index: 32; */
+          background-color: #fafafa;
+        }
+
+        h2{
+            position: absolute;
+            z-index: 999;
+            font-family: 'Karla';
+            color: black;
+            // background-color: red;
+
+        }
+      }}
+      
+  }
+
+
+  @media (min-width:995px){
+    .services-img-info-wrapper{
+      .services-page-img{
+        height: 792px;
+        width: 513px;
+        background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+      }
+
+      .service-page-list{
+        display: grid;
+        grid-template: auto auto / 282px 282px;
+      }
+    }
+    .services-section .services-info h2 {
+      width: 410px;
+    }
+    
+    .skills-section{
+      h1{
+        font-size: 250px;
+        &::after{
+          top: 170px;
+        }
+      }
+      h2{
+        margin-top: -115px;
+      }
+      .circular-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .circular-item{
+          .circular{
+            h2{
+              top: 180px;
+            }
+          }
+        }
+      }
+    }
+  }
