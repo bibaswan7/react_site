@@ -1,101 +1,117 @@
-.skills-section {
-    padding: 0 15px 80px 15px;
-  
-    .circular-container{
-       h3{
-        font-family: "Playfair Display";
-        font-size: 22px;
-        font-weight: 200;
-        margin-bottom: 30px;
-
-       }
-        
-    
-    
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        
-        .circular{
-        height: 180px;
-        width: 180px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        // background-image: conic-gradient(rgb(0, 183, 255) 45deg, gray 45deg);
-        position: relative;
-
-        &::after{
-          /* border: 1px solid black; */
-          content: "";
-          left: 50%;
-          top: 50%;
-          /* transform: translateY(-50%); */
-          transform: translate(-50%, -50%);
-          position: absolute;
-          height: 178px;
-          width: 178px;
-          border-radius: 50%;
-          /* z-index: 32; */
-          background-color: #fafafa;
-        }
-
-        h2{
-            position: absolute;
-            z-index: 999;
-            font-family: 'Karla';
-            color: black;
-            // background-color: red;
-
-        }
-      }}
+.services-section {
+  // background-color: red;
+  .services-img-info-wrapper{
+    .services-page-img{
+      display: none;
+    }
+    @include lg{
+      margin-top: -170px;
+      display: flex;
       
+
+      .services-page-img{
+        display: block;
+        margin-left: -50px;
+        width: 360px;
+        object-fit: cover;
+        @include breakpoint(1257px){
+          width: 560px;
+  
+        }
+      }
+
+    }
+
   }
 
+  h1 {
+    font-family: "Playfair Display";
+    color: $color-title;
+    font-size: $text-xxl;
+    text-align: center;
+    margin: 0 0 30px 0;
+    @include lg{
+      font-size: $text-xxxl;
+    }
+  }
 
-  @media (min-width:995px){
-    .services-img-info-wrapper{
-      .services-page-img{
-        height: 792px;
-        width: 513px;
-        background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  .services-info {
+    font-family: "Karla";
+
+    >p{
+      text-transform: uppercase;
+      // font-family: 'Karla';
+      font-weight: 600;
+      color: #bfbfbf;
+      font-size: 14px;
+      letter-spacing: 3px;
+
+    }
+    h2 {
+      font-family: "Playfair Display";
+      font-size: 34px;
+      width: 401px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin-bottom: 51px;
+      @include md{
+        width: 500px;
       }
+    }
+    >h3 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: "Karla";
+      font-weight: 800;
+      color: $color-primary;
+    }
+    h3 {
+      // font-family: 'Karla';
+    }
+  }
+}
 
-      .service-page-list{
+.services-section {
+  padding: 0 15px 80px 15px;
+
+  .services-info {
+    padding: 48px 32px 48px 0;
+
+    .services-list {
+      @include lg{
         display: grid;
-        grid-template: auto auto / 282px 282px;
+        grid-template: 300px 300px/ 300px 300px;
       }
-    }
-    .services-section .services-info h2 {
-      width: 410px;
-    }
-    
-    .skills-section{
-      h1{
-        font-size: 250px;
-        &::after{
-          top: 170px;
-        }
-      }
-      h2{
-        margin-top: -115px;
-      }
-      .circular-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+      .item-container {
+        margin-bottom: 64px;
 
-        .circular-item{
-          .circular{
-            h2{
-              top: 180px;
-            }
+        h3 {
+          
+          margin-bottom: 30px;
+          color: rgba(0, 0, 0, 0.756);
+          font-size: 16px;
+        }
+        p{
+          width: 401px;
+          font-weight: 400;
+          font-family: 'Karla';
+          font-size: 16px;
+          line-height: 1.8;
+          color: gray;
+          
+        }
+        ul {
+          li {
+            margin-bottom: 10px;
+            color: gray;
+            line-height: 1.8;
+            font-weight: 500;
+            font-family: 'Karla';
+            font-size: 16px;
           }
         }
       }
     }
   }
+}
