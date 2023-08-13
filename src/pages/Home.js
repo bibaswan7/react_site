@@ -1,6 +1,6 @@
 import React from "react";
 import About from "../Layout/About";
-import Services from "../Layout/Services";
+import Service from "../Layout/Service";
 import Work from "../Layout/Work";
 import Blog from "../Layout/Blog";
 import Testimonies from "../Layout/Testimonies";
@@ -11,9 +11,9 @@ export default function Home(){
         
         <About />
         
-        <Services />
+        <Service />
         <Work count= {4}/>
-        <Blog count={8} />
+        <Blog count={8} navIconRequired={true}/>
         <Testimonies />
         </div>
     )

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function Blog({ count }) {
+export default function Blog({ count, navIconRequired, customClass }) {
   const [blogFiles, setBlogFiles] = useState([]);
 
   useEffect(() => {
@@ -72,7 +72,8 @@ export default function Blog({ count }) {
 
       <div className="blog-header">
         <h2>Read our case</h2>
-        <div className="navigation-icons">
+
+        {navIconRequired && <div className="navigation-icons">
           <i
             className="ri-arrow-left-line icons prev-button"
             onClick={handlePrevClick}
@@ -81,13 +82,17 @@ export default function Blog({ count }) {
             className="ri-arrow-right-line icons next-button"
             onClick={handleNextClick}
           ></i>
-        </div>
+        </div>}
       </div>
 
-      <div className="blog-items">
+      <div className={`blog-items ${customClass ? customClass : ""}`}>
+        {navIconRequired?
         <Slider ref={sliderRef} {...settings}>
-          {blogHtml}
+         {blogHtml}
         </Slider>
+        :blogHtml
+        }
+        
       </div>
     </div>
   );

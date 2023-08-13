@@ -1,3 +1,12 @@
+
+
+.worksH1{
+  @include lg{
+    
+    margin-top: -80px;
+  }
+}
+
 .projects-page {
   margin: 0 auto;
   margin-bottom: 280px;

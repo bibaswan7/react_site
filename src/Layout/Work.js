@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-export default function Work({ count }) {
+export default function Work({ count, customClass }) {
   const [imageFiles, setImageFiles] = useState([]);
 
   useEffect(() => {
@@ -40,7 +40,7 @@ export default function Work({ count }) {
   return (
     <div className="projects-page">
       <div className="section-works">
-        <h1>Works</h1>
+        {customClass ? <h1 className={customClass}>Works</h1>: <h1>Works</h1>}
         <h3>Portfolio</h3>
         <h2>Done Projects</h2>
         {workHtml}

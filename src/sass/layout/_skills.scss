@@ -1,0 +1,114 @@
+.skills-section {
+    padding: 80px 15px;
+    h1 {
+      font-family: "Playfair Display";
+      color: $color-title;
+      font-size: $text-xxl;
+      text-align: center;
+      margin: 0 0 30px 0;
+      position: relative;
+      @include lg{
+        font-size: $text-xxxl;
+      }
+  
+      &::after {
+        content: "skills";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 90px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-family: "Karla";
+        font-weight: 800;
+        color: $color-primary;
+        @include lg{
+            top: 190px;
+        }
+  
+        // margin-bottom: 10px;
+      }
+    }
+    >h2{
+      font-family: "Playfair Display";
+        font-size: 34px;
+        // width: 401px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: 40px;
+  
+        margin-bottom: 51px;
+        text-align: center;
+        @include lg{
+            margin-top: -140px;
+            position: relative;
+            z-index: 9999;
+        }
+       
+    }
+
+
+    .circular-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include md{
+        display: grid;
+        grid-template:1fr 1fr / 1fr 1fr;
+        place-items: center;}
+      
+      @include lg{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .circular-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3{
+            font-size: 22px;
+            text-transform: capitalize;
+            font-family: 'Playfair Display';
+            font-weight: 100;
+        }
+        .circular{
+            height: 180px;
+            width: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-image: conic-gradient(rgb(0, 183, 255) 305deg, gray 45deg);
+            position: relative;
+            h2{
+                position: relative;
+                z-index: 999;
+                font-family: 'Playfair Display';
+                font-size: 32px;
+                font-weight: 200;
+            }
+            // z-index: -111;
+    
+            &::after{
+              /* border: 1px solid black; */
+              content: "";
+              left: 50%;
+              top: 50%;
+              /* transform: translateY(-50%); */
+              transform: translate(-50%, -50%);
+              position: absolute;
+              height: 178px;
+              width: 178px;
+              border-radius: 50%;
+              z-index: 2; 
+              background-color: #fafafa;
+            }
+      }
+    }
+  }}

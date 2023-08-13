@@ -1,7 +1,7 @@
 {
   "skills": [
     {
-      "title": "graphic design",
+      "title": "GRAPHIC DESIGN",
       "content": [
         "UI Design",
         "Website & Digital Design",
@@ -104,7 +104,8 @@
         "/images/work-3.jpg",
         "/images/work-4.jpg",
         "/images/work-5.jpg",
-        "/images/work-6.jpg"
+        "/images/work-6.jpg",
+        "/images/work-7.jpg"
         
       ]
     }
