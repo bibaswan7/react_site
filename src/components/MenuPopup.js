@@ -54,10 +54,10 @@ export default function MenuPopup({ handleClick }) {
       <div className="menu-works">
         <h2>Works</h2>
         <div className="menu-img-gallery">
-          <img src="./images/work-1.jpg" alt="" />
-          <img src="./images/work-2.jpg" alt="" />
-          <img src="./images/work-3.jpg" alt="" />
-          <img src="./images/work-4.jpg" alt="" />
+          <img src="/images/work-1.jpg" alt="" />
+          <img src="/images/work-2.jpg" alt="" />
+          <img src="/images/work-3.jpg" alt="" />
+          <img src="/images/work-4.jpg" alt="" />
         </div>
       </div>
     </div>
