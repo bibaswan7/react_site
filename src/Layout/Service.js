@@ -11,11 +11,11 @@ export default function Service() {
   }, [])
 
   const serviceHtml = skill.map((item,index)=>(
-    <div className="item-container">
+    <div key={index} className="item-container">
                 <h3>{index+1} - {item.title}</h3>
                 <ul>
                   {item.content.map((liItem, index)=> (
-                    <li>{liItem}</li>
+                    <li key={index}>{liItem}</li>
                   ))}
                 </ul>
               </div>

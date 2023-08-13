@@ -18,9 +18,9 @@ export default function Header() {
           <div className="lower-logo">AH</div>
         </div>
 
-        <div className="outer" onClick={handleClick}>
+        {!showMenu && <div className="outer" onClick={handleClick}>
           <div className="menu"></div>
-        </div>
+        </div>}
       </div>
       {showMenu && <MenuPopup handleClick={handleClick}/>}
     </>

@@ -5,9 +5,9 @@ import Testimonies from "../Layout/Testimonies";
 export default function About() {
   return (
     <div className="about-page">
-     <AboutLayout slideRequired={false} btnContent={"View my works"}/>
+      <AboutLayout slideRequired={false} btnContent={"View my works"} />
 
-     <div class="intro-paragraph">
+      <div className="intro-paragraph">
         <p>
           The Big Oxmox advised her not to do so, because there were thousands
           of bad Commas, wild Question Marks and devious Semikoli, but the
@@ -29,20 +29,20 @@ export default function About() {
         </p>
       </div>
 
-      <div class="goals-section">
+      <div className="goals-section">
         <h1>Goals</h1>
 
-        <div class="services-img-info-wrapper">
-          <div class="services-info">
+        <div className="services-img-info-wrapper">
+          <div className="services-info">
             <h3>target</h3>
             <h2>Goals</h2>
-            <div class="services-list">
+            <div className="services-list">
               <p>
                 A small river named Duden flows by their place and supplies it
                 with the necessary regelialia. It is a paradisematic country, in
                 which roasted parts of sentences fly into your mouth.
               </p>
-              <div class="item-container">
+              <div className="item-container">
                 <h3>1 - HIGH QUALITY THEME</h3>
                 <p>
                   Even the all-powerful Pointing has no control about the blind
@@ -52,7 +52,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div class="item-container">
+              <div className="item-container">
                 <h3>2 - CUSTOMER SATISFACTION</h3>
                 <p>
                   Even the all-powerful Pointing has no control about the blind
@@ -62,7 +62,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div class="item-container">
+              <div className="item-container">
                 <h3>3 - WELL MENTAINED SITES</h3>
                 <p>
                   Even the all-powerful Pointing has no control about the blind
