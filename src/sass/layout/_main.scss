@@ -1,13 +1,15 @@
 .main-container {
   box-sizing: border-box;
   background-color: #fafafa;
-  margin: 0 auto;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  @include sm {
+  // display: flex;
+  // flex-direction: column;
+  // border: 1px solid saddlebrown;
+  
+  // @include sm {
     max-width: 463px;
-  }
+    margin: 0 auto;
+  // }
 
   @include md {
     max-width: 768px;

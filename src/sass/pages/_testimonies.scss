@@ -1,0 +1,129 @@
+.section-testimonials {
+    padding: 80px 15px;
+    h1 {
+      font-family: "Playfair Display";
+      color: $color-title;
+      font-size: $text-xxl;
+      text-align: center;
+      margin: 0 0 30px 0;
+      position: relative;
+      @include lg{
+        font-size: $text-xxxl;
+        margin-left: -150px;
+      }
+  
+      &::after {
+        content: "testimonies";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 85px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-family: "Karla";
+        font-weight: 800;
+        color: #bfbfbf;
+        @include lg{
+        left: 150px;
+        top:185px;
+        }
+      }
+    }
+    h2{
+      font-family: "Playfair Display";
+        font-size: 34px;
+        // width: 401px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: 50px;
+        z-index: 9999;
+        margin-bottom: 51px;
+        position: relative;
+        text-align: center;
+       @include lg{
+        margin-top: -150px;
+
+       }
+    }
+  
+    .quote{
+      padding: 10px 20px;
+      // margin-bottom: 80px;
+      p{
+        font-family: 'Playfair Display';
+        margin-bottom: 45px;
+        font-size: 30px;
+        line-height: 1.8;
+        text-align: center;
+        width: 100%;
+        max-width: 393px;
+        margin-left: auto;
+        margin-right: auto;
+        @include md{
+            max-width: 680px;
+       
+        }
+        &:last-child{
+            padding-bottom: 40px;
+        }
+  
+      }
+  
+      
+    }
+  }
+
+/* Custom styling for rectangular indicators */
+.slick-slider {
+    position: relative;
+  }
+  
+  .slick-slider .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px; /* Adjust the positioning as needed */
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    
+  }
+  
+  .slick-slider .slick-dots li {
+    flex: 0 0 auto;
+
+    margin: 0 5px; /* Adjust the spacing between indicators */
+  }
+  
+  /* Add 10px gap between indicators */
+  .slick-slider .slick-dots li:not(:last-child) {
+    margin-right: 18px;
+    
+  }
+  
+  .slick-slider .slick-dots li button {
+    width: 30px; /* Adjust the width of the rectangle */
+    height: 3px; /* Adjust the height of the rectangle */
+    background-color: #706d6d78; /* Adjust the background color */
+    border-radius: 0; /* Make sure there is no border radius */
+    padding: 0;
+    cursor: pointer;
+    
+  }
+  
+  .slick-slider .slick-dots li button::before {
+    display: none;
+    
+  }
+  
+  .slick-slider .slick-dots li button:hover {
+    background-color: gray;
+  }
+  
+  /* Active indicator styling */
+  .slick-slider .slick-dots li.slick-active button {
+    background-color: black; /* Adjust the active indicator color */
+  }
+  

@@ -1,70 +1,176 @@
-.blog-page{
-    margin-bottom: 100px;
-    .blog-image {
-        overflow: hidden;
-        
-        .image-wrapper {
-            // height: 100%;
-            overflow: hidden;
-            position: relative;
-        
 
-    
-    
-        img {
-          width: 100%;
-          transition: transform 0.3s ease;
-        //   height: 100%;
-          object-fit: cover;
-          display: block;
-        }
-    
-        &:hover {
-            .banner-container {
-              position: absolute;
-              z-index: 110;
-              opacity: 100;
-              background: rgba(0, 0, 0, 0.448);
-            }
-      
-            img {
-              transform: scale(1.2);
-            }
-          }}
 
-        .banner-container{
-            width: 100%;
-            height: 100%;
-        }
-    
-        
-      }
+
+
+.slick-next, .slick-prev {
+  display: none !important;
 }
 
+.section-blog{
+  padding: 0 15px;
+  h1 {
+    font-family: "Playfair Display";
+    color: $color-title;
+    font-size: $text-xxl;
+    text-align: center;
+    margin: 0 0 30px 0;
+    position: relative;
 
-@media (min-width:995px) {
-  .blog-description-container{
+    &::after {
+      content: "blog";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 85px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-family: "Karla";
+      font-weight: 800;
+      color: $color-primary;
+
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.blog-header{
+  position: relative;
+  margin-bottom: 100px;
+    h2 {
+      font-family: "Playfair1";
+      font-size: 34px;
+      // width: 401px;
+      font-weight: 400;
+      line-height: 1.5;
+      margin: 0px;
+      margin-bottom: 51px;
+      text-align: center;
+      // display: block;
+    }
+  .navigation-icons {
+    position: absolute;
+    top:90px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    
+    
+    .icons {
+      width: auto;
+      color: black;
+      background-color: white;
+      margin: 10px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+}
+.blog-image {
+  overflow: hidden;
+
+  .image-wrapper {
+    // height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 433px;
+      // height: 50px;
+      transition: transform 0.3s ease;
+      //   height: 100%;
+      object-fit: cover;
+      display: block;
+      @include md{
+        width: 345px;
+      }
+    }
+
+    &:hover {
+      .banner-container {
+        position: absolute;
+        z-index: 110;
+        opacity: 100;
+        background: rgba(0, 0, 0, 0.448);
+      }
+
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .banner-container {
+    width: 100%;
+    height: 100%;
+  }
+  p{
+      font-family: 'Karla';
+      letter-spacing: 4px;
+      padding: 20px 10px;
+      width: max-content;
+      background-color: white;
+      position: relative;
+      bottom: 45px;  
+      left: 20px;  
+      z-index: 999;  
+      font-size: 12px;
+      box-shadow: 0px 2px 49px -4px rgba(0, 0, 0, 0.21);
+    }
+}
+
+.blog-item{
+  display: flex;
+  flex-direction: column;
+  >p{
+    margin: 0;
+    line-height: 1.8;
+    font-size: 16px;
+    max-width: 420px;
+    display: inline-block;
+    color: gray;
+    font-family: 'Karla';
+    @include md{
+      width: 368px;
+
+    }
+    
+}
+h2{
+  font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1.5;
+    margin: -20px 0 31px 0;
+}
+}
+
+@media (min-width: 995px) {
+  .blog-description-container {
     display: grid;
     margin-top: 100px;
     grid-template: repeat(3, auto) / repeat(3, 359px);
     column-gap: 20px;
   }
-  .section-blog{
+  .section-blog {
     margin-top: -120px;
-    h1{
-        font-size: 250px;
+    h1 {
+      font-size: 250px;
 
-        &::after{
-            top: 170px;;
-        }
+      &::after {
+        top: 190px;
+      }
     }
-    .blog-header{
-        margin-top: -115px;
+    .blog-header {
+      margin-top: -155px;
     }
+  }
+  .blog-image {
+    overflow: hidden;
+
+    .image-wrapper {
+      width: 360px;
+    }
+  }
 }
-.blog-image {
-  overflow: hidden;
-  
-  .image-wrapper {
-    width: 360px;
-}}}

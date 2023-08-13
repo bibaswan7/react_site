@@ -1,88 +1,112 @@
 {
-    "skills": [
-        {
-            "title": "graphic design",
-            "content": [
-                "UI Design",
-                "Website & Digital Design",
-                "Brading & Visual Identity",
-                "Print Design"
-            ],
-            "percent": 100
-        },
-        {
-            "title": "ILLUSTRATION",
-            "content": [
-                "Editorial",
-                "Narrative",
-                "Motion Graphics",
-                "Animation",
-                "Visual Effects"
-            ],
-            "percent": 85
-        },
-        {
-            "title": "FRONT END DEVELOPMENT",
-            "content": [
-                "HTML / CSS",
-                "JS & Jquery Startup",
-                "WordPress",
-                "Jomla"
-            ],
-            "percent": 75
-        },
-        {
-            "title": "WEB MARKETING",
-            "content": [
-                "Sales Marketing",
-                "Invoice",
-                "eCommerce"
-            ],
-            "percent": 80
-        }
-    ],
-    "quotes": [
-        {
-            "quote": "When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove",
-            "author": " — Liam Jenkins"
-        },
-        {
-            "quote": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.",
-            "author": " — Daniel Foster"
-        },
-        {
-            "quote": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
-            "author": " — George Brooks"
-        }
-    ],
-    "about": {
-        "short": "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.",
-        "long": "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way."
+  "skills": [
+    {
+      "title": "graphic design",
+      "content": [
+        "UI Design",
+        "Website & Digital Design",
+        "Brading & Visual Identity",
+        "Print Design"
+      ],
+      "percent": 100
     },
-    "works": {
-        "short": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-        "long": "On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word \"and\" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.",
-        "extra": "When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way."
+    {
+      "title": "ILLUSTRATION",
+      "content": [
+        "Editorial",
+        "Narrative",
+        "Motion Graphics",
+        "Animation",
+        "Visual Effects"
+      ],
+      "percent": 85
     },
-    "blog": {
-        "title": "A Japanese Constellation",
-        "content": "When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove"
+    {
+      "title": "FRONT END DEVELOPMENT",
+      "content": ["HTML / CSS", "JS & Jquery Startup", "WordPress", "Jomla"],
+      "percent": 75
     },
-    "goals": {
-        "hero": "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
-        "content": [
-            {
-                "title": "HIGH QUALITY THEME",
-                "content": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar."
-            },
-            {
-                "title": "CUSTOMER SATISFACTION",
-                "content": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar."
-            },
-            {
-                "title": "WELL MENTAINED SITES",
-                "content": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar."
-            }
-        ]
+    {
+      "title": "WEB MARKETING",
+      "content": ["Sales Marketing", "Invoice", "eCommerce"],
+      "percent": 80
     }
+  ],
+  "quotes": [
+    {
+      "quote": "When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove",
+      "author": " — Liam Jenkins"
+    },
+    {
+      "quote": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.",
+      "author": " — Daniel Foster"
+    },
+    {
+      "quote": "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
+      "author": " — George Brooks"
+    }
+  ],
+  "about": {
+    "short": "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.",
+    "long": "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way."
+  },
+  "works": {
+    "short": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+    "long": "On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word \"and\" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.",
+    "extra": "When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way."
+  },
+  "blog": {
+    "title": "A Japanese Constellation",
+    "content": "When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove"
+  },
+  "goals": {
+    "hero": "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.",
+    "content": [
+      {
+        "title": "HIGH QUALITY THEME",
+        "content": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar."
+      },
+      {
+        "title": "CUSTOMER SATISFACTION",
+        "content": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar."
+      },
+      {
+        "title": "WELL MENTAINED SITES",
+        "content": "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar."
+      }
+    ]
+  },
+
+  "images": 
+    {
+      "about": [
+        "/images/about-2.jpg",
+        "/images/about.jpg"
+      ],
+      "blog": [
+        "/images/img-1.jpg",
+        "/images/img-2.jpg",
+        "/images/img-3.jpg",
+        "/images/img-4.jpg",
+        "/images/img-5.jpg",
+        "/images/img-6.jpg",
+        "/images/img-7.jpg",
+        "/images/img-8.jpg",
+        "/images/img-9.jpg"
+      ],
+      "services": [
+        "/images/services-img-1.jpg",
+        "/images/services-img.jpg"
+      ],
+      "work": [
+        "/images/work-1.jpg",
+        "/images/work-2.jpg",
+        "/images/work-3.jpg",
+        "/images/work-4.jpg",
+        "/images/work-5.jpg",
+        "/images/work-6.jpg"
+        
+      ]
+    }
+  
 }
