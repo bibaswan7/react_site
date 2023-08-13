@@ -1,8 +1,12 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 export default function MenuPopup({ handleClick }) {
+    const activeStyles = {
+        
+        color: "#aa00f9"
+    }
   return (
     <div className="menu-expand">
       <div className="close-btn-container">
@@ -15,34 +19,34 @@ export default function MenuPopup({ handleClick }) {
       <div className="menu-items">
         <ul>
           <li>
-            <Link to="/" className="nav-link">
+            <NavLink to="/" style={({ isActive }) => isActive ? activeStyles : null}>
               HOME
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/services" className="nav-link">
+            <NavLink to="/services" style={({ isActive }) => isActive ? activeStyles : null}>
               SERVICES
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/works" className="nav-link">
+            <NavLink to="/works" style={({ isActive }) => isActive ? activeStyles : null}>
               WORK
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/blog" className="nav-link">
+            <NavLink to="/blog" style={({ isActive }) => isActive ? activeStyles : null}>
               BLOG
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about" className="nav-link">
+            <NavLink to="/about" style={({ isActive }) => isActive ? activeStyles : null}>
               ABOUT
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact" className="nav-link">
+            <NavLink to="/contact" style={({ isActive }) => isActive ? activeStyles : null}>
               CONTACT
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>

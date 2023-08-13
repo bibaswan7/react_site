@@ -1,0 +1,152 @@
+
+.about-page{
+    @include lg{
+
+        margin-bottom: 150px;
+    }
+}
+
+.intro-paragraph{
+    margin: 80px 0 100px 0;
+    width: 100%;
+      p {
+        max-width: 100%;
+        margin: 0 auto;
+          margin-bottom: 24px;
+          line-height: 1.8;
+          font-size: 16px;
+          color: gray;
+          font-family: 'Karla';
+          width: 433px;
+        }
+    
+
+        @include md{
+            
+                p{
+                    width: 100%;
+                    max-width: 720px;
+                }
+            }
+        
+        @include lg{
+            display: flex;
+            margin-top: -130px;
+        p{
+
+            width: 389px;
+            padding: 0 15px;
+        }
+        }
+    
+  }
+
+  .goals-section{
+    
+    h1 {
+        font-family: "Playfair Display";
+        color: $color-title;
+        font-size: $text-xxl;
+        text-align: center;
+        margin: 0 0 30px 0;
+        @include lg{
+          font-size: $text-xxxl;
+        }
+      }
+      .services-info {
+        font-family: "Karla";
+    
+        
+        h2 {
+          font-family: "Playfair Display";
+          font-size: 34px;
+          width: 401px;
+          font-weight: 400;
+          line-height: 1.5;
+          margin-bottom: 51px;
+          @include md{
+            width: 500px;
+          }
+        }
+        >h3 {
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-family: "Karla";
+          font-weight: 800;
+          color: $color-primary;
+        }
+    }
+    .services-img-info-wrapper{
+        @include lg{
+            margin-top: -170px;
+            // padding-left: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .services-info{
+                .services-list{
+                    max-width: 485px;
+                    .item-container{
+                        max-width: 485px;
+                    }
+                }
+            }
+        }
+        img{
+            display: none;
+            @include lg{
+                display: block;
+                width: 423px;
+                object-fit: cover;
+                height: 1074px;
+            }
+        }
+    }
+    .services-info{
+        .services-list{
+            display: flex;
+            flex-direction: column;
+
+            p{
+                max-width: 401px;
+                font-family: 'Karla';
+                line-height: 1.8;
+          font-size: 16px;
+          margin-bottom: 15px;
+          color: gray;
+          @include md{
+            max-width: 688px;
+          }
+            }
+            .item-container{
+                margin-bottom: 15px;
+                h3{
+                    font-size: $text-p;
+                    color: $color-primary;
+                }
+               
+                p{
+                    @include md{
+                        display: block;
+                        max-width: 688px;
+                    }
+                }
+            }
+        }
+    }
+    @include breakpoint(1200px){
+        .services-img-info-wrapper{
+            gap: 150px;
+            .services-info{
+                .services-list{
+                        p{
+                            width: 595px;
+                            // max-width: 595px;
+                        }
+                }
+            }
+        }
+    }
+  }

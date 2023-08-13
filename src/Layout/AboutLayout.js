@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Button from "../components/Button";
 
-export default function About() {
+export default function AboutLayout({slideRequired, btnContent}) {
 
     const settings = {
         autoplay: true,
@@ -30,19 +30,21 @@ export default function About() {
             </div>
 
             <div className="intro-img-info-container">
-                <div className="image-section img-slider">
-                    <Slider {...settings}>
-                        <img src="./images/about.jpg" alt="" />
-                        <img src="./images/about-2.jpg" alt="" />
-                    </Slider>
+                <div className="image-section">
+                    {slideRequired?<Slider {...settings}>
+                        <img src="/images/about.jpg" alt="" />
+                        <img src="/images/about-2.jpg" alt="" />
+                    </Slider>: <img src="./images/about.jpg" alt="" />}
+                    
                 </div>
 
                 <div className="intro-section">
-                    <div className="intro-title img-slider">
-                        <Slider {...settings}>
+                    <div className="intro-title">
+                        {slideRequired? <Slider {...settings}>
                             <h1>Noah<br />Henderson</h1>
                             <h1>I'm<br />A Designer</h1>
-                        </Slider>
+                        </Slider>: <h1>Noah<br />Henderson</h1>}
+                        
                     </div>
 
                     <div className="intro-about">
@@ -69,8 +71,8 @@ export default function About() {
                                     className="ri-dribbble-line icon"
                                 ></i>
                             </div>
-                            <Button className="btn-contact">
-                                CONTACT ME
+                            <Button className="btn">
+                                {btnContent}
                             </Button>
                         </div>
                     </div>

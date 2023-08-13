@@ -16,8 +16,9 @@
     font-size: $text-btn;
   }
 
-  .btn-contact{
-    width: 142px;
+  .btn{
+    width: max-content;
+    text-transform: uppercase;
     margin: 0 4px 4px 0;
     padding: 8px 20px;
     outline: none;
