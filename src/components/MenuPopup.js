@@ -1,12 +1,10 @@
 import React from "react";
-import { Link, NavLink } from 'react-router-dom';
-
+import { Link, NavLink } from "react-router-dom";
 
 export default function MenuPopup({ handleClick }) {
-    const activeStyles = {
-        
-        color: "#aa00f9"
-    }
+  const activeStyles = {
+    color: "#aa00f9",
+  };
   return (
     <div className="menu-expand">
       <div className="close-btn-container">
@@ -19,32 +17,50 @@ export default function MenuPopup({ handleClick }) {
       <div className="menu-items">
         <ul>
           <li>
-            <NavLink to="/" style={({ isActive }) => isActive ? activeStyles : null}>
+            <NavLink
+              to="/"
+              style={({ isActive }) => (isActive ? activeStyles : null)}
+            >
               HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to="/services" style={({ isActive }) => isActive ? activeStyles : null}>
+            <NavLink
+              to="/services"
+              style={({ isActive }) => (isActive ? activeStyles : null)}
+            >
               SERVICES
             </NavLink>
           </li>
           <li>
-            <NavLink to="/works" style={({ isActive }) => isActive ? activeStyles : null}>
+            <NavLink
+              to="/works"
+              style={({ isActive }) => (isActive ? activeStyles : null)}
+            >
               WORK
             </NavLink>
           </li>
           <li>
-            <NavLink to="/blog" style={({ isActive }) => isActive ? activeStyles : null}>
+            <NavLink
+              to="/blog"
+              style={({ isActive }) => (isActive ? activeStyles : null)}
+            >
               BLOG
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" style={({ isActive }) => isActive ? activeStyles : null}>
+            <NavLink
+              to="/about"
+              style={({ isActive }) => (isActive ? activeStyles : null)}
+            >
               ABOUT
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" style={({ isActive }) => isActive ? activeStyles : null}>
+            <NavLink
+              to="/contact"
+              style={({ isActive }) => (isActive ? activeStyles : null)}
+            >
               CONTACT
             </NavLink>
           </li>
