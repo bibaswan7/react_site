@@ -54,15 +54,12 @@ export default function Blog({ count, navIconRequired, customClass }) {
       <div className="blog-image">
         <div className="banner-container"></div>
         <div className="image-wrapper">
-          <img src={blogFiles[index]} alt="" />
+          <img src={item.image} alt="" />
         </div>
-        <p>15. FEB 2018</p>
+        <p>1{item.date}</p>
       </div>
-      <h2>A Japanese Constellation</h2>
-      <p>
-        When she reached the first hills of the Italic Mountains, she had a last
-        view back on the skyline of her hometown Bookmarksgrove
-      </p>
+      <h2>{item.title}</h2>
+      <p>{item.description}</p>
     </div>
   ));
 
@@ -73,26 +70,28 @@ export default function Blog({ count, navIconRequired, customClass }) {
       <div className="blog-header">
         <h2>Read our case</h2>
 
-        {navIconRequired && <div className="navigation-icons">
-          <i
-            className="ri-arrow-left-line icons prev-button"
-            onClick={handlePrevClick}
-          ></i>
-          <i
-            className="ri-arrow-right-line icons next-button"
-            onClick={handleNextClick}
-          ></i>
-        </div>}
+        {navIconRequired && (
+          <div className="navigation-icons">
+            <i
+              className="ri-arrow-left-line icons prev-button"
+              onClick={handlePrevClick}
+            ></i>
+            <i
+              className="ri-arrow-right-line icons next-button"
+              onClick={handleNextClick}
+            ></i>
+          </div>
+        )}
       </div>
 
       <div className={`blog-items ${customClass ? customClass : ""}`}>
-        {navIconRequired?
-        <Slider ref={sliderRef} {...settings}>
-         {blogHtml}
-        </Slider>
-        :blogHtml
-        }
-        
+        {navIconRequired ? (
+          <Slider ref={sliderRef} {...settings}>
+            {blogHtml}
+          </Slider>
+        ) : (
+          blogHtml
+        )}
       </div>
     </div>
   );

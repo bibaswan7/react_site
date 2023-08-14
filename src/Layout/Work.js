@@ -11,7 +11,7 @@ export default function Work({ count, customClass }) {
 
   const workHtml = imageFiles.map((item, index) => {
     let style = {
-      background: `url("${item}")`,
+      background: `url("${item.imageUrl}")`,
       backgroundSize: "cover",
       backgroundPosition: "center",
     };
@@ -21,14 +21,11 @@ export default function Work({ count, customClass }) {
         <div className="work-banner" style={style}>
           <div className="banner-container"></div>
           <div className="banner-title">
-            <h2>Pursuing Best</h2>
+            <h2>{item.title}</h2>
           </div>
         </div>
         <p>
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia, there live the blind texts. Separated they
-          live in Bookmarksgrove right at the coast of the Semantics, a large
-          language ocean.
+          {item.description}
         </p>
         <div className="view-detail">
           <a href="#">View details</a>

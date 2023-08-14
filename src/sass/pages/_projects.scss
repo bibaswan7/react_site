@@ -81,7 +81,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 282px;
+            width: max-content;
+            padding: 0 50px;
             height: 161px;
             background: white;
             transition: all 0.2s ease-in;
