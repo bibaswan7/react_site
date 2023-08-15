@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import MenuPopup from "./MenuPopup";
+import { Link } from "react-router-dom";
+
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleClick = () => {
-    setShowMenu(!showMenu);
+    setShowMenu(prevMenu => !prevMenu);
     if (showMenu) {
       // Enable scrolling on the body when menu is closed
       document.body.style.overflow = "auto";
@@ -18,10 +20,13 @@ export default function Header() {
   return (
     <>
       <div className="header">
+        <Link to="/">
+
         <div className="logo">
           <div className="upper-logo">NO</div>
           <div className="lower-logo">AH</div>
         </div>
+        </Link>
 
         {!showMenu ? (
           <div className="outer" onClick={handleClick}>
@@ -31,7 +36,7 @@ export default function Header() {
           ""
         )}
       </div>
-      {showMenu && <MenuPopup handleClick={handleClick} />}
+      {showMenu && <MenuPopup handleClick={handleClick}/>}
     </>
   );
 }

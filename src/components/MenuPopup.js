@@ -5,6 +5,8 @@ export default function MenuPopup({ handleClick }) {
   const activeStyles = {
     color: "#aa00f9",
   };
+
+
   return (
     <div className="menu-expand">
       <div className="close-btn-container">
@@ -15,7 +17,7 @@ export default function MenuPopup({ handleClick }) {
         <i className="ri-search-line search-icon"></i>
       </form>
       <div className="menu-items">
-        <ul>
+        <ul onClick={handleClick}>
           <li>
             <NavLink
               to="/"
